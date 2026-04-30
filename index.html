@@ -3,77 +3,375 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alper Can Özer | AI/ML & Software Developer</title>
-  <meta name="description" content="Portfolio of Alper Can Özer — Junior AI/ML and Software Developer focused on applied AI systems, LLM agents, and product-oriented software development." />
-  <link rel="stylesheet" href="style.css" />
+  <title>Alper Can Özer — AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main>
-    <header class="hero">
-      <p class="eyebrow">Junior AI/ML & Software Developer</p>
-      <h1>Alper Can Özer</h1>
-      <p class="summary">
-        I build applied AI systems end-to-end: clinical AI, local LLM agents,
-        from-scratch transformers, PyTorch models, and mobile products.
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-noise"></div>
+    <div class="container hero-inner">
+      <div class="hero-tag">EU Citizen · Open to relocate</div>
+      <h1 class="hero-name">Alper Can Özer</h1>
+      <p class="hero-role">Junior <em>AI / ML Engineer</em></p>
+      <p class="hero-bio">
+        I build end-to-end AI systems — from fine-tuning clinical transformers to 
+        shipping on-device LLM agents. Strong on model internals; equally comfortable 
+        taking products to production.
       </p>
-      <div class="links">
-        <a href="https://github.com/Jessitoii">GitHub</a>
-        <a href="https://www.linkedin.com/in/alper-can-%C3%B6zer-7bbbba247/">LinkedIn</a>
-        <a href="mailto:alpercanzerr1600@gmail.com">Email</a>
+      <div class="hero-links">
+        <a href="https://github.com/Jessitoii" target="_blank" class="btn btn-primary">GitHub</a>
+        <a href="https://www.linkedin.com/in/alper-can-%C3%B6zer-7bbbba247/" target="_blank" class="btn btn-outline">LinkedIn</a>
+        <a href="mailto:alpercanzerr1600@gmail.com" class="btn btn-outline">Email</a>
       </div>
-    </header>
+    </div>
+    <div class="hero-scroll-hint">scroll</div>
+  </section>
 
-    <section>
-      <h2>Featured Projects</h2>
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="container stats-inner">
+      <div class="stat">
+        <span class="stat-num">95.82%</span>
+        <span class="stat-label">BioBERT macro F1</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">200K+</span>
+        <span class="stat-label">chess positions trained</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">8</span>
+        <span class="stat-label">disease classes, multimodal</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">60.63%</span>
+        <span class="stat-label">audio genre test accuracy</span>
+      </div>
+    </div>
+  </div>
 
-      <article class="project">
-        <h3>ClinicaEye-NLP</h3>
-        <p class="stack">BioBERT · EfficientNet-B4 · FastAPI · Next.js · ONNX Runtime · Docker</p>
-        <p>
-          Multimodal ophthalmology AI decision support system combining clinical notes
-          and fundus images to estimate probabilities across 8 disease classes.
-        </p>
-        <a href="https://github.com/Jessitoii/ClinicaEye-NLP">View project</a>
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <!-- CLINICAEYE — HERO PROJECT -->
+      <article class="project-hero" data-aos>
+        <div class="project-hero-content">
+          <div class="project-meta">
+            <span class="project-tag tag-nlp">NLP · Computer Vision · Docker</span>
+            <span class="project-tag tag-grad">Capstone Project</span>
+          </div>
+          <h3 class="project-title">ClinicaEye-NLP</h3>
+          <p class="project-subtitle">Multimodal Ophthalmology AI Decision Support System</p>
+          <p class="project-desc">
+            End-to-end multimodal AI combining 22K+ clinical text samples and 10K fundus 
+            images to estimate disease probability across 8 ophthalmology classes. 
+            Fine-tuned BioBERT with negation handling; built EfficientNet-B4 image pipeline 
+            with Ben Graham preprocessing and class-imbalance-aware training. 
+            Late-fusion scoring, Captum explainability, ONNX Runtime optimization, 
+            Dockerized FastAPI + Next.js interface.
+          </p>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-val">95.82%</span>
+              <span class="metric-key">NLP Macro F1</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">0.6487</span>
+              <span class="metric-key">Vision Macro F1</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">4,518</span>
+              <span class="metric-key">Test samples</span>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span>BioBERT</span><span>EfficientNet-B4</span><span>FastAPI</span>
+            <span>ONNX Runtime</span><span>Docker</span><span>Next.js</span>
+          </div>
+          <a href="https://github.com/Jessitoii/ClinicaEye-NLP" target="_blank" class="btn btn-primary">View on GitHub</a>
+        </div>
+        <div class="project-hero-visual">
+          <div class="visual-card">
+            <div class="visual-label">NLP Model · BioBERT</div>
+            <div class="visual-bars">
+              <div class="vbar-row"><span>Dry Eye</span><div class="vbar"><div class="vbar-fill" style="width:98.63%"></div></div><span class="vbar-val">98.63%</span></div>
+              <div class="vbar-row"><span>Macular</span><div class="vbar"><div class="vbar-fill" style="width:97.45%"></div></div><span class="vbar-val">97.45%</span></div>
+              <div class="vbar-row"><span>DR</span><div class="vbar"><div class="vbar-fill" style="width:96.94%"></div></div><span class="vbar-val">96.94%</span></div>
+              <div class="vbar-row"><span>Conjunct.</span><div class="vbar"><div class="vbar-fill" style="width:96.39%"></div></div><span class="vbar-val">96.39%</span></div>
+              <div class="vbar-row"><span>Uveitis</span><div class="vbar"><div class="vbar-fill" style="width:95.51%"></div></div><span class="vbar-val">95.51%</span></div>
+              <div class="vbar-row"><span>Glaucoma</span><div class="vbar"><div class="vbar-fill" style="width:94.70%"></div></div><span class="vbar-val">94.70%</span></div>
+              <div class="vbar-row"><span>Cataract</span><div class="vbar"><div class="vbar-fill" style="width:94.19%"></div></div><span class="vbar-val">94.19%</span></div>
+              <div class="vbar-row"><span>Retinal D.</span><div class="vbar"><div class="vbar-fill" style="width:92.77%"></div></div><span class="vbar-val">92.77%</span></div>
+            </div>
+            <div class="visual-footer">F1-Score per disease class</div>
+          </div>
+        </div>
       </article>
 
-      <article class="project">
-        <h3>OpenReef</h3>
-        <p class="stack">Flutter · local Gemma inference · LLM agents · tool execution · semantic memory</p>
-        <p>
-          On-device AI agent mobile app focused on local inference, tool use,
-          semantic memory, automation workflows, and privacy-oriented AI.
-        </p>
-        <a href="https://github.com/Jessitoii/openreef">View project</a>
-      </article>
+      <!-- PROJECT GRID -->
+      <div class="project-grid">
 
-      <article class="project">
-        <h3>NumPy GPT</h3>
-        <p class="stack">Python · NumPy · CuPy · manual backpropagation · causal self-attention</p>
-        <p>
-          GPT-style decoder-only transformer implemented from scratch without
-          PyTorch, TensorFlow, or autograd.
-        </p>
-        <a href="https://github.com/Jessitoii/numpy-gpt">View project</a>
-      </article>
+        <!-- OpenReef -->
+        <article class="project-card" data-aos>
+          <div class="project-meta">
+            <span class="project-tag tag-agent">LLM Agent · Mobile</span>
+            <span class="status-badge status-active">In Progress</span>
+          </div>
+          <h3 class="project-title">OpenReef</h3>
+          <p class="project-subtitle">On-device AI Agent Mobile App</p>
+          <p class="project-desc">
+            Flutter app running local Gemma inference on-device. Agent runtime pipeline 
+            with tool routing, approval handling, semantic memory, and scheduled 
+            automation workflows. Privacy-first: no data leaves the device.
+          </p>
+          <div class="project-stack">
+            <span>Flutter</span><span>Dart</span><span>Gemma</span>
+            <span>LLM Agents</span><span>Semantic Memory</span>
+          </div>
+          <a href="https://github.com/Jessitoii/openreef" target="_blank" class="btn-link">GitHub →</a>
+        </article>
 
-      <article class="project">
-        <h3>alphares-chess</h3>
-        <p class="stack">PyTorch · ResNet · Stockfish · python-chess · PyQt5</p>
-        <p>
-          AlphaZero-inspired supervised chess AI with dual policy/value heads,
-          trained on Stockfish-labeled positions and integrated into a chess GUI.
-        </p>
-        <a href="https://github.com/Jessitoii/alphares-chess">View project</a>
-      </article>
-    </section>
+        <!-- NumPy GPT -->
+        <article class="project-card" data-aos>
+          <div class="project-meta">
+            <span class="project-tag tag-ml">ML Fundamentals</span>
+          </div>
+          <h3 class="project-title">NumPy GPT</h3>
+          <p class="project-subtitle">Transformer from Scratch</p>
+          <p class="project-desc">
+            GPT-style decoder-only transformer implemented entirely in NumPy/CuPy — 
+            no PyTorch, no autograd. Manual forward/backward passes through every layer: 
+            embeddings, multi-head causal self-attention, FFN, Adam optimizer. 
+            Attention heatmap visualizations included.
+          </p>
+          <div class="project-stack">
+            <span>NumPy</span><span>CuPy</span><span>Manual Backprop</span><span>PyQt5</span>
+          </div>
+          <a href="https://github.com/Jessitoii/numpy-gpt" target="_blank" class="btn-link">GitHub →</a>
+        </article>
 
-    <section>
-      <h2>Focus</h2>
-      <p>
-        AI/ML engineering · LLM agents · model evaluation · FastAPI inference APIs ·
-        mobile AI products · React Native / Flutter apps
-      </p>
-    </section>
-  </main>
+        <!-- alphares-chess -->
+        <article class="project-card" data-aos>
+          <div class="project-meta">
+            <span class="project-tag tag-ml">RL-inspired · PyTorch</span>
+          </div>
+          <h3 class="project-title">alphares-chess</h3>
+          <p class="project-subtitle">AlphaZero-inspired Chess AI</p>
+          <p class="project-desc">
+            Dual-headed ResNet for chess policy prediction and board value estimation. 
+            Trained on ~200K Stockfish-labeled positions from Grandmaster games. 
+            Val policy top-1: 20.58%, val value MAE: 0.1180. Overfitting analysis 
+            documented; roadmap toward MCTS and data augmentation.
+          </p>
+          <div class="project-metrics project-metrics-sm">
+            <div class="metric"><span class="metric-val">20.58%</span><span class="metric-key">Val Top-1</span></div>
+            <div class="metric"><span class="metric-val">0.118</span><span class="metric-key">Val MAE</span></div>
+          </div>
+          <div class="project-stack">
+            <span>PyTorch</span><span>ResNet</span><span>Stockfish</span><span>PyQt5</span>
+          </div>
+          <a href="https://github.com/Jessitoii/alphares-chess" target="_blank" class="btn-link">GitHub →</a>
+        </article>
+
+        <!-- screen-agent -->
+        <article class="project-card" data-aos>
+          <div class="project-meta">
+            <span class="project-tag tag-agent">LLM Agent · Computer Use</span>
+          </div>
+          <h3 class="project-title">screen-agent</h3>
+          <p class="project-subtitle">ReAct-based Autonomous Computer Agent</p>
+          <p class="project-desc">
+            Local computer-use agent running Gemma 3 12B via Ollama. 
+            ReAct loop: screenshot → visual context → JSON action → OS execution 
+            via pyautogui/pywinauto. Next: YOLOv11 + OCR perception layer 
+            for ID-based UI targeting.
+          </p>
+          <div class="project-stack">
+            <span>Gemma 3 12B</span><span>Ollama</span><span>ReAct</span><span>PyQt5</span>
+          </div>
+          <a href="https://github.com/Jessitoii/screen-agent" target="_blank" class="btn-link">GitHub →</a>
+        </article>
+
+        <!-- Crypto Agent -->
+        <article class="project-card" data-aos>
+          <div class="project-meta">
+            <span class="project-tag tag-agent">LLM · LoRA · Backtesting</span>
+          </div>
+          <h3 class="project-title">Crypto Agent / Nexus AI</h3>
+          <p class="project-subtitle">LLM-based Signal Research System</p>
+          <p class="project-desc">
+            Fine-tuned DeBERTa v3 on 15K+ labeled crypto news for sentiment 
+            classification. LoRA-based LLM adaptation for LONG/SHORT/HOLD signal 
+            reasoning. Diagnosed model collapse toward HOLD — identified supervised 
+            classification loss vs. trading objective mismatch as core failure mode. 
+            Stopped deliberately.
+          </p>
+          <div class="project-stack">
+            <span>DeBERTa v3</span><span>LoRA</span><span>HuggingFace</span><span>Backtesting</span>
+          </div>
+          <a href="https://github.com/Jessitoii/crypto-agent" target="_blank" class="btn-link">GitHub →</a>
+        </article>
+
+        <!-- CNN Genre -->
+        <article class="project-card" data-aos>
+          <div class="project-meta">
+            <span class="project-tag tag-ml">Computer Vision · Audio</span>
+          </div>
+          <h3 class="project-title">CNN Genre Recognition</h3>
+          <p class="project-subtitle">FMA Music Classification</p>
+          <p class="project-desc">
+            Audio genre classifier converting 30s clips to Mel-Spectrograms, 
+            trained on 8 balanced genres. BatchNorm, Dropout, SpecAugment, 
+            label smoothing, AdamW. FastAPI inference backend + Next.js demo.
+          </p>
+          <div class="project-metrics project-metrics-sm">
+            <div class="metric"><span class="metric-val">60.63%</span><span class="metric-key">Test Accuracy</span></div>
+            <div class="metric"><span class="metric-val">0.59</span><span class="metric-key">Macro F1</span></div>
+          </div>
+          <div class="project-stack">
+            <span>PyTorch</span><span>Librosa</span><span>FastAPI</span><span>Next.js</span>
+          </div>
+          <a href="https://github.com/Jessitoii/cnn-based-genre-recognition-fma" target="_blank" class="btn-link">GitHub →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Stack</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4 class="skill-group-title">AI / ML</h4>
+          <div class="skill-pills">
+            <span>PyTorch</span><span>Transformers</span><span>scikit-learn</span>
+            <span>NumPy</span><span>Fine-tuning</span><span>LoRA</span>
+            <span>ONNX Runtime</span><span>Model Evaluation</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">LLM Systems</h4>
+          <div class="skill-pills">
+            <span>LLM Agents</span><span>Local Inference</span><span>RAG</span>
+            <span>Semantic Memory</span><span>Tool Execution</span><span>Ollama</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Backend & Data</h4>
+          <div class="skill-pills">
+            <span>Python</span><span>FastAPI</span><span>REST APIs</span>
+            <span>SQL</span><span>Pandas</span><span>Docker</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Frontend & Mobile</h4>
+          <div class="skill-pills">
+            <span>Flutter</span><span>React Native</span><span>Next.js</span>
+            <span>TypeScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <div class="section-header">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">Background</h2>
+        </div>
+        <p>
+          Final-year Computer Engineering student at Bursa Uludağ University 
+          (graduating Jun 2026). EU citizen via Bulgarian passport — 
+          no visa sponsorship required anywhere in Europe.
+        </p>
+        <p>
+          My work lives at the intersection of ML depth and product thinking. 
+          I care about understanding why models work — I built a transformer 
+          from scratch before using PyTorch — and equally about shipping 
+          things that run in the real world.
+        </p>
+        <p>
+          Co-founded a startup (Kampüs Taxi / UniRide), led end-to-end mobile 
+          development, incorporated the company, and took the app to Google Play.
+        </p>
+        <div class="about-links">
+          <a href="https://github.com/Jessitoii" target="_blank" class="btn btn-primary">GitHub Profile</a>
+          <a href="https://uni-ride-kappa.vercel.app" target="_blank" class="btn btn-outline">UniRide App</a>
+        </div>
+      </div>
+      <div class="about-sidebar">
+        <div class="sidebar-card">
+          <h4>Education</h4>
+          <div class="edu-item">
+            <span class="edu-school">Bursa Uludağ University</span>
+            <span class="edu-degree">B.Sc. Computer Engineering</span>
+            <span class="edu-year">Expected Jun 2026</span>
+          </div>
+          <div class="edu-item">
+            <span class="edu-school">Eskişehir Osmangazi University</span>
+            <span class="edu-degree">Computer Engineering (Transfer)</span>
+            <span class="edu-year">2021 – 2024</span>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>Shipped to Production</h4>
+          <a href="https://play.google.com/store/apps/details?id=com.alper.ramazan_imsakiyesi" target="_blank" class="shipped-item">
+            <span class="shipped-icon">▶</span>
+            <span>Ramazan İmsakiyesi — Google Play</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.alper.uniride" target="_blank" class="shipped-item">
+            <span class="shipped-icon">▶</span>
+            <span>UniRide — Google Play</span>
+          </a>
+        </div>
+        <div class="sidebar-card">
+          <h4>Languages</h4>
+          <div class="lang-item"><span>Turkish</span><span class="lang-level">Native</span></div>
+          <div class="lang-item"><span>English</span><span class="lang-level">B2</span></div>
+          <div class="lang-item"><span>Bulgarian</span><span class="lang-level">Citizenship</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CTA -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-cta">
+        <h2>Let's work together.</h2>
+        <p>Open to junior AI/ML and software engineering roles across Europe.</p>
+        <a href="mailto:alpercanzerr1600@gmail.com" class="btn btn-primary btn-lg">
+          alpercanzerr1600@gmail.com
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Jessitoii" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/alper-can-%C3%B6zer-7bbbba247/" target="_blank">LinkedIn</a>
+      </div>
+      <p class="footer-copy">© 2026 Alper Can Özer</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
